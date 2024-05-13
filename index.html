@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Input Data Rabbit Hole</title>
+  <link rel="shortcut icon" type="x-icon" href="rh_logo_input.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Input Data ke Spreadsheet</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <div class="title" style="text-align: center; font-size: 24px;">Input Data Arisan Rabbit Hole</div>
+    <div class="content">
+      <div class="user-details">
+        <div class="input-box">
+          <form id="form1" action="https://script.google.com/macros/s/AKfycbyOy_PQrQTiEUTSK2AiBSF0i7jC4E1SuAJQ5INP5Ss/dev" method="post">
+            <fieldset>
+              <legend>Form 1: Mau</legend>
+              <div>
+                <label for="mau_id" class="form-label">Mau dari STORY </label>
+                <input type="text" id="mau_id" name="mau_id" class="form-control" placeholder="Id Instagram yang comment MAU di STORY">
+                <label for="komen_di" class="form-label">Komen di</label>:</label>
+                <select id="komen_di" name="komen_di" class="form-control" required>
+                  <option value="">Pilih</option>
+                  <option value="Post">Post</option>
+                  <option value="Story">Story</option>
+              </div>
+            </fieldset>
+            <br>
+            <div class="button" style="width: 100%;">
+              <input type="submit" value="Save" class="btn btn-primary">
+            </div>
+          </form>  
+          <form id="form2" action="https://script.google.com/macros/s/AKfycbxmlIMOzfc0IyvmoUng6HAayXRQfAxWAPKfsWwl1SU/dev" method="post" onsubmit="return validateForm()">
+            <fieldset>
+              <legend>Form 2: Mau dari WA</legend>
+              <label for="mau_id" class="form-label">Nama </label>
+              <input type="text" id="mau_id" name="mau_id" class="form-control" placeholder="Nama">
+              <label for="no_wa" class="form-label">Nomor WA:</label>
+              <input type="tel" id="no_wa" name="no_wa" class="form-control" placeholder="Format: 08961111111" required>
+            </fieldset>
+            <br>
+            <div class="button" style="width: 100%;">
+              <input type="submit" value="Save" class="btn btn-primary">
+            </div>
+          </form>
+          <form id="form3" action="https://script.google.com/macros/s/AKfycbyWSj232rxs1R-kLD_DA_lalxbwn0GYAN7-Oq18Pvk6/dev" method="post" onsubmit="return validateForm()">
+            <fieldset>
+              <legend>Form 3: Pindah Batch </legend>
+              <label for="id_arisan_1" class="form-label">ID Arisan:</label>
+              <input type="text" id="id_arisan_1" name="id_arisan" class="form-control" placeholder="Contoh : AR-0001">
+              <label for="batch" class="form-label">Pindah ke Batch:</label>
+              <input type="text" id="batch" name="pindah_ke" class="form-control" placeholder="Contoh: 1">
+            </fieldset>
+            <!-- Submit button for the se Google Sheet -->
+            <br>
+            <div class="button" style="width: 100%;">
+              <input type="submit" value="Save" class="btn btn-primary">
+            </div>
+          </form>
+
+          <form id="form4" action="https://script.google.com/macros/s/AKfycbzClNqS9tesVyPgDQfQwSQzXhniVbcelC8LgrneBgo/dev" method="post" onsubmit="return validateForm()">
+            <fieldset>
+              <legend>Form 4: Peserta Keluar</legend>
+              <label for="id_arisan_2" class="form-label">ID Arisan:</label>
+              <input type="text" id="id_arisan_2" name="id_arisan" class="form-control" placeholder="Contoh : AR-0001" required>
+              <label for="exit_note" class="form-label">Alasan Keluar:</label>
+              <select id="exit_note" name="exit_note" class="form-control" required>
+                <option value="">Pilih</option>
+                <option value="lunas_cepat">Lunas Cepat</option>
+                <option value="gagal_bayar">Gagal Bayar</option>
+                <option value="mengundurkan_diri">Mengundurkan Diri</option>
+            </fieldset>
+                <!-- Submit button for the third Google Sheet -->
+            <br>
+            <div class="button" style="width: 100%;">
+              <input type="submit" value="Save" class="btn btn-primary" style="background-color: rgb(233, 12, 12); color: black;">
+            </div> 
+          </form>
+          <small>Jika ada kendala, dapat menghubungi data analyst di <a href="https://wa.me/6289653485519">sini</a></small>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<br>
+</html>
