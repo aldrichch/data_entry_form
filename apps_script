@@ -11,7 +11,7 @@ function doPost(e) {
 
 
   sheet.getRange(newRow, 1, 1, rowData.length).setValues([rowData]);
-  var summary = "<p>Ringkasan:</p>";
+  var summary = "<p>Summary:</p>";
   summary += "<ul>";
   summary += "<li>Full Name: " + e.parameter.full_name + "</li>";
   summary += "<li>Mobile: " + e.parameter.mobile + "</li>";
