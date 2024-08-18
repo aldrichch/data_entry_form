@@ -1,0 +1,33 @@
+function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("input");
+  var newRow = sheet.getLastRow() + 1;
+  var rowData = [];
+
+  rowData[0] = new Date();       
+  rowData[1] = e.parameter.full_name; 
+  rowData[2] = e.parameter.mobile;
+  rowData[3] = e.parameter.type;
+  rowData[4] = e.parameter.amount
+
+
+  sheet.getRange(newRow, 1, 1, rowData.length).setValues([rowData]);
+  var summary = "<p>Ringkasan:</p>";
+  summary += "<ul>";
+  summary += "<li>Full Name: " + e.parameter.full_name + "</li>";
+  summary += "<li>Mobile: " + e.parameter.mobile + "</li>";
+  summary += "<li>Type: " + e.parameter.type + "</li>";
+  summary += "<li>Amount: " + e.parameter.amount + "</li>";
+  summary += "</ul>";
+
+  var output = 
+    "<p>Submitted. Thank You!</p>" +
+    summary +
+    "<button onclick='goToLink()'>Back to the form</button>" +
+    "<script>" +
+    "function goToLink() {" +
+    "window.open('https://aldrichch.github.io/form_input_data/', '_blank');" +
+    "}" +
+    "</script>";
+
+  return HtmlService.createHtmlOutput(output);
+}
