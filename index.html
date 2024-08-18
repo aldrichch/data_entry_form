@@ -29,13 +29,14 @@
               <label for="full_name" class="form-label">Full Name </label>
               <input type="text" id="full_name" name="full_name" class="form-control" placeholder="Please type the full name">
               <label for="mobile" class="form-label">Mobile:</label>
-              <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="Pleas start with country code: +62" required>
-              <label for="exit_note" class="form-label">Alasan Keluar:</label>
-              <select id="exit_note" name="exit_note" class="form-control" required>
+              <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="Please start with country code: +62" required>
+              <label for="amount" class="form-label">Amount </label>
+              <input type="number" id="amount" name="amount" class="form-control" placeholder="in USD">
+              <label for="type" class="form-label">Type:</label>
+              <select id="type" name="type" class="form-control" required>
                 <option value="">Pilih</option>
-                <option value="lunas_cepat">Lunas Cepat</option>
-                <option value="gagal_bayar">Gagal Bayar</option>
-                <option value="mengundurkan_diri">Mengundurkan Diri</option>
+                <option value="loan">Loan</option>
+                <option value="debt">Debt</option>
             </fieldset>
             <br>
             <div class="button" style="width: 100%;">
