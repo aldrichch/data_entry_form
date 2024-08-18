@@ -3,10 +3,12 @@ I'm trying to create my own "Google form" with apps script and HTML. I upload th
 This is the form display or you can visit https://aldrichch.github.io/data_input_form/
 
 <div align="center">
-  <img src="./form_screenshot.png" alt="Form Screenshot" width="750" style="border: 50px solid blue;">
+  <img src="./form_screenshot.png" alt="Form Screenshot" width="750">
 </div>
 
 
 
 and this is the output in the spreadsheet
-
+<div align="center">
+  <img src="./output_spreadsheets.png" alt="Form Screenshot" width="700">
+</div>
